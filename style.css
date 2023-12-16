@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --NavColor: #181818;
+    --LogoBg: #fff;
+
+    --FontColor01: #000;
+    --FontColor02: #fff;
+
+    --CardColor: #fff;
+
+    --transition02: 0.2s;
+    --transition03: 0.3s;
+    --transition04: 0.4s;
+    --transition05: 0.5s;
+}
+
+/*Header*/
+
+#navigation-menu {
+    display: flex;
+    height: 7vh;
+    width: 100%;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--NavColor);
+}
+
+#logo img {
+    height: 3.5rem;
+    background-color: var(--LogoBg);
+    border-radius: 50%;
+}
+
+#nav-items {
+    display: flex;
+    gap: 2rem;
+    padding: 10px 60px;
+    border-radius: 4rem;
+
+    background-color: var(--CardColor);
+
+    transition: var(--transition05);
+}
+
+#nav-items span {
+    color: #00000060;
+}
+
+#nav-items a {
+    color: var(--FontColor01);
+
+    font-family: "Montserrat";
+    font-weight: 400;
+
+    transition: var(--transition03);
+}
+
+#nav-items a:focus {
+    color: var(--FontColor02);
+}
+
+#socialMedia i {
+    font-size: 1.3rem;
+    color: var(--FontColor02);
+}
+
+/*Main Section*/
+
+#main-section {
+    overflow: hidden;
+    background-image: url(./image/mainPhoto.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+
+#info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 2rem;
+    height: 100vh;
+    width: 100vw;
+    color: var(--FontColor02);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.836);
+}
+
+#info video {
+    height: 71.5vh;
+    width: 65vw;
+    border-radius: 0.5rem;
+}
+
+#img-info-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    width: 67vw;
+    height: 75vh;
+    background-color: rgba(255, 255, 255, 0.161);
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    width: 25vw;
+    height: 75vh;
+    border-radius: 0.5rem;
+    color: var(--NavColor);
+    background-color: var(--CardColor);
+}
+
+.info-card h1 {
+    font-weight: bold;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.info-card p {
+    font-size: 1.1rem;
+    font-family: "Montserrat";
+    letter-spacing: 0.1rem;
+}
+
+/* Second Section */
+
+#second-section {
+    display: flex;
+    align-items: center;
+    background-color: #141414;
+    height: 80vh;
+    gap: 2rem;
+    padding: 1.5rem;
+    object-fit: contain;
+}
+
+#second-section img {
+    height: 70vh;
+    border-radius: 0.5rem;
+    background-color: #00000000;
+
+    transition: var(--transition04);
+}
+
+#second-section img:hover {
+    transform: scale(1.03);
+}
+
+#first-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 10px 0px;
+    height: 70vh;
+    width: 80vw;
+    border-radius: 0.5rem;
+
+    background-color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+
+#first-info h1 {
+    align-self: center;
+    color: var(--FontColor01);
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+
+    transition: var(--transition03);
+}
+
+#first-info h1:hover {
+    color: var(--FontColor02);
+    background-color: var(--NavColor);
+}
+
+/* Third Section */
+
+#third-section {
+    display: flex;
+    padding: 30px 0px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3rem;
+    height: 100vh;
+    color: var(--FontColor02);
+    background-color: rgb(0, 0, 0);
+}
+
+#third-section div img {
+    background-color: #ffffff1e;
+}
+#third-section div img:hover {
+    background-color: #ffffff;
+}
+
+#third-section div img {
+    border-radius: 0.5rem;
+    height: 12rem;
+    width: 20rem;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+#third-section img:hover {
+    transform: scale(1.03);
+}
+
+#third-section div {
+    display: flex;
+    align-items: center;
+}
+
+#third-section span {
+    height: 12rem;
+    width: 25rem;
+    padding: 0.5rem;
+
+    text-align: center;
+    letter-spacing: 5px;
+    color: var(--FontColor01);
+    background-color: var(--CardColor);
+
+    font-family: "Montserrat";
+
+    opacity: 0;
+    transition: var(--transition05);
+}
+
+#third-section span:hover {
+    opacity: 1;
+}
